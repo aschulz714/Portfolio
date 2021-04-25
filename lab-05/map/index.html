@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=utf-8 />
+  <title>Title of page</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #d3d3d3;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      color: #3d3d3d;
+    }
+
+    section {
+      width: 80%;
+      margin: 10px auto;
+    }
+
+    h1 {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 800;
+      font-size: 2.5em;
+      /* The em unit. 2.5x the current size */
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      color: gray;
+      font-size: 1.25em;
+      letter-spacing: .04em;
+    }
+
+    p {
+      font-size: 1em;
+      line-height: 1.5em;
+    }
+
+    a {
+      color: #005daa;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 10px 0
+    }
+
+    #map {
+      width: 100%;
+      margin: 0px auto;
+
+    }
+
+    .max-image-width {
+      width: 100%;
+    }
+
+
+    .linkbox {
+      margin: 3px 0 20px 0;
+      display: block;
+      font-weight: 300;
+    }
+
+    hr {
+      border: 0px;
+      border-bottom: 1px solid #3d3d3d;
+      padding-top: 20px;
+    }
+
+    /* Use float property to make two-column layout. */
+
+    .first-column {
+      float: left;
+      width: 48%;
+      padding-right: 20px;
+    }
+
+    .column {
+      float: left;
+      width: 48%;
+    }
+
+    /* Clear floats after the columns */
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* When browser is 800px wide or less */
+
+    @media screen and (max-width: 800px) {
+
+      .first-column,
+      .column {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <!-- Add map to top of page and make it stretch to fill browser window. -->
+    <img class="max-image-width" src="north_american_breweries_1200px.png">
+
+    <!-- Create a two column layout for map information. -->
+    <a href='north_american_breweries_8000px.png' class="linkbox">Full screen version</a>
+
+    <h1>Breweries of North America and Hawaii</h1>
+    <h2>Authored by: Alex Schulz</h2>
+
+    <div class="row">
+
+      <!-- First column, the left half -->
+      <div class="first-column">
+        <p>The North America and Hawaii Breweries map shows brewery density using 50km hexagons. The areas of North America with the most breweries per 50km hexagon follow the pattern of major cities.The top three areas with the highest brewery density in North America are Denver, San Diego, and Seattle.</p>
+        <p>Check out the list of North America brewery locations with a <a href="../GeoJSON/list_of_breweries.geojson">link to the GeoJSON</a></p>
+        <p>To the right, is a closer look at the area with the third-most breweries: Seattle. Within the Seattle-area, the Ballard neighborhood offers the most breweries per 2km inner diameter hexagon. Ballard is home to the Lagunitas Brewery; one of my personal favorites.</p>
+      </div>
+
+      <!-- Second column, the right half -->
+      <div class="column">
+        <!-- Challenge map -->
+        <img class="max-image-width" src="seattle_breweries_1200px.png">
+        <p class="linkbox">2km Hexbin Map of Seattle-Area Breweries, <a href="seattle_breweries_8000px.png">enlarge map</a></p>
+        
+
+        <!-- Challenge photograph -->
+        <img class="max-image-width" src="../graphics/seattle_skyline.jpg">
+        <p class="linkbox">Seattle Skyline</p>
+
+      </div>
+    </div>
+
+    <h3>Map details</h3>
+    <p>These maps were made with QGIS 3.14. Brewery locations provided by POI Factory. <br/>Countries, states, and urban areas provided by Natural Earth.</p>
+
+    <p>
+      University of Kentucky New Maps Plus, Fall 2020.
+    </p>
+    <hr>
+    <ul>
+      <li>Visit my Github account <a href='https://github.com/aschulz714'>@aschulz714</a> </li>
+      <li><a href="https://newmapsplus.github.io">New Maps Plus</a></li>
+    </ul>
+  </section>
+
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset=utf-8 />
+	<title>..</title>
+	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background: #d3d3d3;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 400;
+			color: #3d3d3d;
+		}
+
+		section {
+			/* width: 960px; */
+			width: 80%;
+			margin: 20px auto;
+		}
+
+		h1 {
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 800;
+			font-size: 2.5em;
+			/* The em unit. 3x the current size */
+			letter-spacing: .04em;
+			text-transform: uppercase;
+		}
+
+		h2 {
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 700;
+			color: gray;
+			font-size: 1.25em;
+			letter-spacing: .04em;
+		}
+
+		p {
+			font-size: 1em;
+			line-height: 1.5em;
+		}
+
+		a {
+			color: #005daa;
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		ul {
+			padding-left: 20px;
+		}
+
+		li {
+			margin: 10px 0
+		}
+
+		#map {
+			width: 100%;
+			margin: 10px auto;
+			border: 2px solid #d3d3d3;
+		}
+
+		.max-image-width {
+			width:100%;
+		}
+	</style>
+</head>
+
+<body>
+
+	<section>
+
+
+		<div id='map'>
+			<img src="graphics/population_density_by_county_1200px.png" alt="Map of Population Patterns and Internet Usage" class="max-image-width">
+			<br/>
+			<a href="graphics/population_density_by_county_8000px.png">Link to High Resolution Map</a>
+			<br/>
+			<a href="map/geojson/michigan_county_population.geojson">Link to Michigan Counties GeoJson</a>
+
+		</div>
+
+		<h1>U.S. County Population Density</h1>
+
+		<h2>Authored by: Alex Schulz</h2>
+		<p>This map shows the population density of U.S. counties. The state and county data was sourced from the U.S. Census Bureau TIGER products, while the population data was provided by the USDA Economic Research Service  <a href="https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html" target="_blank">Census Bureau Data</a>.  <a href="https://www.ers.usda.gov/data-products/county-level-data-sets/download-data/" target="_blank">USDA Economic Research Service</a>. </p>
+
+		<ul>
+			<li>See my projects on GitHub: <a href="https://github.com/aschulz714">Alex Schulz</a></li>
+		</ul>
+	</section>
+
+</body>
+
+</html>
